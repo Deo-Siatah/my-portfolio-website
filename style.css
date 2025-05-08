@@ -1,0 +1,366 @@
+/*****************STYLING FOR index.html************************************/
+
+/* General body styling */
+body {
+    background-color: rgb(6, 5, 5);  /* Dark background color */
+    font-size: 16px; /* Base font size */
+    background-image: url(bgrd.jpg); /* Background image */
+    background-attachment: fixed; /* Fixes the background while scrolling */
+    background-size: cover; /* Ensures the background image covers the entire viewport */
+}
+
+/* Styling for the name section */
+#name {
+    font-size: 2em; /* Larger font size for emphasis */
+    font-family: sans-serif; /* Sans-serif font for readability */
+    font-style: italic; /* Italicized text */
+    color: white; /* White text color */
+    text-align: center; /* Center-align the text */
+    margin-top: 80px; /* Adds space above the name */
+}
+
+/* Styling for the profile picture */
+.profilepic img {
+    width: 200px; /* Fixed width for the image */
+    height: 200px; /* Fixed height for the image */
+    display: block; /* Centers the image */
+    margin: 20px auto; /* Adds margin and centers horizontally */
+    object-fit: cover; /* Ensures the image fits within the container */
+    border-radius: 50%; /* Makes the image circular */
+    animation-name: grow; /* Applies the grow animation */
+    animation-duration: 5s; /* Animation duration of 5 seconds */
+}
+
+/* Keyframe animation for the profile picture */
+@keyframes grow {
+    50% { transform: scale(2, 2); } /* Scales the image to twice its size at 50% of the animation */
+}
+
+/* Styling for the "About" section */
+#about {
+    font-family: sans-serif; /* Sans-serif font for readability */
+    font-style: italic; /* Italicized text */
+    color: rgb(55, 136, 174); /* Blue text color */
+    text-decoration: underline; /* Underlines the text */
+}
+
+/* Styling for the details section */
+.details {
+    color: hsl(0, 0%, 100%); /* White text color */
+    border: 1px solid grey; /* Grey border */
+    padding: 20px; /* Adds padding inside the container */
+    background-color: hsl(0, 1%, 14%); /* Dark background color */
+}
+
+/* Styling for links */
+#link {
+    text-decoration: none; /* Removes underline from links */
+    font-size: 20px; /* Larger font size for emphasis */
+    color: hsl(180, 100%, 50%); /* Bright blue color */
+}
+
+/* Hover effect for links */
+#link:hover {
+    color: hsl(0, 59%, 41%); /* Changes color to red on hover */
+}
+
+/* Styling for individual skills */
+.skill {
+    margin-bottom: 10px; /* Adds space below each skill */
+}
+
+/* Styling for skill names */
+.skill-name {
+    margin-bottom: 5px; /* Adds space below the skill name */
+}
+
+/* Styling for the skill bar container */
+.skill-bar {
+    background: #ddd; /* Light grey background */
+    border-radius: 20px; /* Rounded corners */
+    overflow: hidden; /* Ensures content stays within the container */
+    height: 20px; /* Fixed height for the skill bar */
+}
+
+/* Styling for the skill level inside the skill bar */
+.skill-level {
+    height: 100%; /* Fills the entire height of the skill bar */
+    color: white; /* White text color */
+    text-align: right; /* Aligns text to the right */
+    padding-right: 10px; /* Adds padding to the right */
+    line-height: 20px; /* Centers text vertically */
+    border-radius: 20px; /* Matches the border radius of the skill bar */
+}
+
+/* Styling for the CV download button */
+.cv-button {
+    background-color: #007bff; /* Blue background color */
+    color: white; /* White text color */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 20px; /* Adds padding inside the button */
+    text-decoration: none; /* Removes underline from the text */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Hover effect for the CV button */
+.cv-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Styling for button containers */
+.button {
+    margin-top: 40px; /* Adds space above the button */
+    margin-left: 40px; /* Adds space to the left of the button */
+}
+
+/* Styling for the project button */
+.project {
+    background-color: #007bff; /* Blue background color */
+    color: white; /* White text color */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 20px; /* Adds padding inside the button */
+    text-decoration: none; /* Removes underline from the text */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Hover effect for the project button */
+.project:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Styling for email links */
+#email {
+    text-decoration: none; /* Removes underline from the email link */
+}
+
+/* Styling for social media handles */
+#handles {
+    text-decoration: none; /* Removes underline from the handles */
+    padding: 20px; /* Adds padding around the handles */
+    color: #007bff; /* Blue text color */
+}
+
+/* Styling for the footer */
+.footer {
+    text-align: center; /* Centers the footer text */
+    color: white; /* White text color */
+}
+
+/* Styling for the end section */
+.end {
+    background-color: #242323; /* Dark background color */
+}
+
+
+/* Styling for the end section */
+.end {
+    background-color: #242323; /* Dark background color */
+}
+
+/********************STYLING FOR PAGE1.HTML***********************************/
+
+/* Styling for the education section */
+.edu {
+    color: hsl(0, 0%, 100%); /* White text color */
+    border: 1px solid grey; /* Grey border */
+    padding: 20px; /* Adds padding inside the container */
+    background-color: hsl(0, 1%, 14%); /* Dark background color */
+}
+
+/* Media query for smaller screens (max-width: 600px) */
+@media (max-width: 600px) {
+    body {
+        font-size: 15px; /* Reduces font size for better readability on small screens */
+    }
+    .intro-buttons {
+        flex-direction: column; /* Stacks buttons vertically */
+        align-items: stretch; /* Stretches buttons to fit the container width */
+    }
+    .btn-1, .btn-2 {
+        width: 100%; /* Makes buttons take up the full width */
+        text-align: center; /* Centers the text inside the buttons */
+    }
+}
+
+/****************STYLING FOR intropage.HTML********************************/
+
+/* Styling for the introduction section */
+.intro {
+    color: white; /* White text color */
+    padding: 80px 20px; /* Adds padding around the section */
+    font-size: 20px; /* Sets font size */
+    font-family: seol sans heavy; /* Custom font family */
+}
+
+/* Styling for the introduction container */
+.intro-container {
+    display: flex; /* Enables flexbox layout */
+    justify-content: space-between; /* Adds space between text and image */
+    align-items: center; /* Aligns items vertically */
+    max-width: 1200px; /* Sets maximum width of the container */
+    margin: 0 auto; /* Centers the container horizontally */
+}
+
+/* Styling for the introduction text */
+.intro-text {
+    flex: 1; /* Allows the text to take up available space */
+}
+
+/* Styling for animated text */
+#animated-text {
+    font-size: 40px; /* Sets font size for animated text */
+}
+
+/* Styling for the introduction image container */
+.intro-image {
+    flex: 1; /* Allows the image to take up available space */
+    text-align: right; /* Aligns the image to the right */
+}
+
+/* Styling for the introduction image */
+.intro-image img {
+    width: 200px; /* Sets fixed width for the image */
+    height: 200px; /* Sets fixed height for the image */
+    object-fit: cover; /* Ensures the image fits within the container */
+    border-radius: 50%; /* Makes the image circular */
+    border: 3px solid #fff; /* Adds a white border around the image */
+    box-shadow: 0 4px 15px rgba(185, 124, 142, 0.687); /* Adds a shadow effect */
+}
+
+/* Styling for the introduction buttons container */
+.intro-buttons {
+    display: flex; /* Enables flexbox layout */
+    gap: 1rem; /* Adds space between buttons */
+    margin-top: 1.5rem; /* Adds margin above the buttons */
+}
+
+/* Styling for individual buttons */
+.btn-1, .btn-2 {
+    text-decoration: none; /* Removes underline from button text */
+    padding: 12px 24px; /* Adds padding inside the buttons */
+    border-radius: 8px; /* Rounds the corners of the buttons */
+    margin-right: 10px; /* Adds margin to the right of the buttons */
+    font-weight: bold; /* Makes the button text bold */
+    transition: 0.3s ease; /* Adds a smooth transition effect */
+    flex-wrap: wrap; /* Allows text to wrap inside the buttons */
+}
+
+/* Styling for the first button */
+.btn-1 {
+    background-color: #00b894; /* Green background color */
+    color: white; /* White text color */
+}
+
+/* Styling for the second button */
+.btn-2 {
+    background-color: #333; /* Dark grey background color */
+    color: white; /* White text color */
+}
+
+/* Hover effect for the first button */
+.btn-1:hover {
+    background-color: brown; /* Changes background color to brown on hover */
+}
+
+/* Hover effect for the second button */
+.btn-2:hover {
+    background-color: brown; /* Changes background color to brown on hover */
+}
+/********************STYLING FOR PAGE1.HTML***********************************/
+.edu{
+    color: hsl(0, 0%, 100%);
+    border:1px solid grey;
+    padding:20px;
+    background-color: hsl(0, 1%, 14%);
+}
+
+@media(max-width:600px){
+    body{
+        font-size: 15px;
+    }
+    .intro-buttons{
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .btn-1,.btn-2{
+        width: 100%;
+        text-align: center;
+    }
+}
+
+
+/****************STYLING FOR intropage.HTML********************************/
+.intro{
+    
+    color: white;
+    padding: 80px 20px;
+    font-size: 20px;
+    font-family: seol sans heavy;
+    ;
+}
+
+
+.intro-container{
+    display:flex; /*enable flexbox */
+    justify-content: space-between;  /*adds space between txt and image */
+    align-items:center; /*aligns items vertically */
+    max-width: 1200px; /*sets max width of container */
+    margin: 0 auto; /*centers the container */
+
+}
+.intro-text{
+    flex:1; /*allows text to take up available space */
+}
+#animated-text{
+    font-size: 40px;
+}
+
+
+.intro-image{
+    flex:1; /*allows image to take up available space */
+    text-align: right; /*centers the image */
+}
+
+.intro-image img{
+    width: 200px;
+    height:200px;
+    object-fit: cover;
+    border-radius: 50%;
+    border:3px solid #fff;
+    box-shadow: 0 4px 15px rgba(185, 124, 142, 0.687);
+    
+}
+
+.intro-buttons{
+    display: flex;
+    gap:1rem;
+    margin-top: 1.5rem;
+}
+
+.btn-1,.btn-2{
+    text-decoration: none;
+    padding:12px 24px;
+    border-radius: 8px;
+    margin-right: 10px;
+    font-weight: bold;
+    transition: 0.3s ease;
+    flex-wrap: wrap;
+    
+
+}
+.btn-1{
+    background-color: #00b894;
+    color:white;
+}
+.btn-2{
+    background-color: #333;
+    color:white;
+}
+
+.btn-1:hover{
+    background-color: brown;
+}
+
+.btn-2:hover{
+    background-color: brown;
+}
