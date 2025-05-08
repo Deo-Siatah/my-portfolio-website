@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Metadata for character encoding and responsive design -->
+    <meta charset="UTF-8"> <!-- Sets the character encoding to UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensures proper scaling on mobile devices -->
+    <title>intro page</title> <!-- Title of the webpage -->
+    <link rel="stylesheet" href="style.css"> <!-- Links the external CSS file for styling -->
+</head>
+
+<!-- Heading for the page -->
+<h2 style="color: white;">UI PORTFOLIO</h2> <!-- Inline styling to set the text color to white -->
+
+<body>
+   
+<!-- Introduction section -->
+<section class="intro">
+   
+    <!-- Container for the introduction content -->
+    <div class="intro-container">
+        
+        <!-- Text content for the introduction -->
+        <div class="intro-text">
+            <h1 id="animated-text"></h1> <!-- Placeholder for animated text -->
+            <h3 class="animated-text"></h3> <!-- Placeholder for additional animated text -->
+            <p>Crafting seamless web experiences while fortifying digital defenses—building, breaking, and securing the online world!🔥😎</p> <!-- Description of skills and expertise -->
+
+            <!-- Buttons for user interaction -->
+            <div class="intro-buttons">
+                <a href="" class="btn-1">Hire me</a> <!-- Button to hire the developer -->
+                <a href="index.html" class="btn-2">My Portfolio</a> <!-- Button to navigate to the portfolio page -->
+            </div>
+        </div>
+
+        <!-- Image content for the introduction -->
+        <div class="intro-image">
+            <img src="DEOScut_resized-removebg-preview.png" alt="intro image"> <!-- Displays an introductory image -->
+        </div>
+
+    </div>
+</section>
+
+<!-- JavaScript for animated text -->
+<script>
+    // Text to be animated
+    const text = "Hi, I'm Siatah Deogracious, Web developer & Ethical Hacker😎";
+    const words = text.split(" "); // Splits the text into individual words
+    const target = document.getElementById("animated-text"); // Selects the element where the text will be displayed
+  
+    let index = 0; // Index to track the current word
+    const interval = setInterval(() => {
+      if (index < words.length) {
+        target.innerHTML += words[index] + " "; // Adds the current word to the target element
+        index++; // Moves to the next word
+      } else {
+        clearInterval(interval); // Stops the animation when all words are displayed
+      }
+    }, 400); // 400ms delay between each word
+</script>
+  
+</body>
+</html>
